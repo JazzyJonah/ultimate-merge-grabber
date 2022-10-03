@@ -1,0 +1,4 @@
+nextcord
+os
+nextcord.abc
+nextcord.ext
