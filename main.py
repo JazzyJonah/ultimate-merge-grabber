@@ -19,9 +19,9 @@ async def on_ready():
 async def help(interaction: Interaction):
   await interaction.response.send_message(
     """
-    **List of commands:**\n\n 
-    `/merge` - shows the merge of two towers (if it exists - so far only merges from the following people have been added: Amber610, Berryl, Canual, JazzyJonah, EngineerMonke, BobertTheBoss, PipDragon (halfway), 423 (no))\n 
-    `/addtobot` - adds a merge to the bot (admin only)\n\n 
+    **List of commands:**\n
+    `/merge` - shows the merge of two towers (if it exists - so far only merges from the following people have been added: Amber610, Berryl, Canual, JazzyJonah, EngineerMonke, BobertTheBoss, PipDragon (halfway), 423 (no)) 
+    `/addtobot` - adds a merge to the bot (admin only)\n
     ||Developed by **JazzyJonah#8979** (<@627917067332485120>) - Source: https://github.com/JazzyJonah/ultimate-merge-grabber||
     """
     )
@@ -140,6 +140,41 @@ async def autocomplete_addtobottower1(interaction: Interaction, tower1: str):
 @addtobot.on_autocomplete("tower2")
 async def autocomplete_addtobottower2(interaction: Interaction, tower2: str):
   await interaction.response.send_autocomplete(magic_filter(tower2))
+
+def check_for_duplicates():
+  with open("towermerges.txt", "r") as f:
+    merges = f.readlines()
+  duplicates=""
+  for item in merges:
+    item = item.split()
+    vrej = False
+    tower1=""
+    tower2=""
+    for word in item:
+      if vrej:
+        if not word.startswith("https"):
+          tower2+=word+" "
+      elif word!="+":
+        tower1+=word+" "
+      else:
+        vrej = True
+    tower2=tower2.replace(": ","")
+
+    vrej = 0
+    for x in merges:
+      if tower1 in x and tower2 in x:
+        vrej+=1
+      if vrej>=2:
+        duplicates+=tower1+"+"+" "+tower2+"\n"
+        break
+  return duplicates
+
+@client.slash_command(name="double_merges", description="Make sure there aren't any duplicate merges!", guild_ids=testingServersIDs)
+async def double_merges(interaction: Interaction):
+  try:
+    await interaction.response.send_message(check_for_duplicates())
+  except:
+    await interaction.response.send_message("There are no duplicates!")
 
 
 def find_merge(mergeItem1, mergeItem2, list):

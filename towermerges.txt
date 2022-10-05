@@ -92,7 +92,6 @@ Super Mines + Trade Empire: https://cdn.discordapp.com/attachments/9591551956176
 M.A.D. + The Biggest One: https://media.discordapp.net/attachments/1025661608774610995/1025666093479641148/123F641B-6CF8-46E4-9815-8CE2E22874A1.png
 Sky Shredder + Perma-Spike: https://cdn.discordapp.com/attachments/959155195617640499/959258146235367494/47270657-2336-4964-AECD-70CE8F014CA2.png
 The Bloon Solver + Bloon Crush: https://cdn.discordapp.com/attachments/959155195617640499/959258264497979423/EDFD1F35-20FD-4F74-B1A7-1CDE30C306F4.png
-Ultra-Juggernaut + M.A.D.: https://media.discordapp.net/attachments/959155195617640499/1021723813387456582/20520AF5-8621-4C52-A221-B386F1B93C41.png
 Inferno Ring + XXXL Trap: https://media.discordapp.net/attachments/959155195617640499/1020982115157946368/Untitled490_20220918162543.png
 Bloon Master Alchemist + Sub Commander: https://cdn.discordapp.com/attachments/959155195617640499/959258347889115166/FAE4AA1D-13A1-4D6D-B5E2-FED55593892D.png
 MOAB Eliminator + Pop and Awe: https://cdn.discordapp.com/attachments/959155195617640499/959286337163390986/Untitled151_20220401104245.png
@@ -190,7 +189,6 @@ The Bloon Solver + Cripple MOAB: https://cdn.discordapp.com/attachments/77468993
 Quincy + Icicle Impale: https://cdn.discordapp.com/attachments/774689939765067828/781706521171197972/Solver_Cripple.png
 Admiral Brickell + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/781706521171197972/Solver_Cripple.png
 Prince of Darknes + Glue Storm: https://cdn.discordapp.com/attachments/774689939765067828/781706786306523166/Pod_Glorm_1.png
-Quincy + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/781706975930744852/QonceGlue.png
 Prince of Darkness + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/781707040699449374/PoD_SGlue.png
 Pirate Lord + Absolute Zero: https://cdn.discordapp.com/attachments/774689939765067828/781707343155036191/Plord_AZ.png
 Prince of Darkness + Pirate Lord: https://cdn.discordapp.com/attachments/774689939765067828/781707534608105492/Plord_of_Darkness.png
@@ -201,7 +199,6 @@ Spirit of the Forest + Inferno Ring: https://cdn.discordapp.com/attachments/7746
 Super Maelstrom + Icicle Impale: https://cdn.discordapp.com/attachments/774689939765067828/781708373976023070/Impsmael_1.png
 Inferno Ring + Wizard Lord Phoenix: https://cdn.discordapp.com/attachments/774689939765067828/781708600665440256/IRing_WLP.png
 Inferno Ring + Absolute Zero: https://cdn.discordapp.com/attachments/774689939765067828/781708757692317696/IRing_AZ.png
-Glaive Lord + Plasma Monkey Fan Club: https://cdn.discordapp.com/attachments/774689939765067828/781708915254755349/GlordWLP2.png
 Glaive Lord + Prince of Darkness: https://cdn.discordapp.com/attachments/774689939765067828/781708979423543366/Glord_Pod.png
 Primary Expertise + Homeland Defense: https://cdn.discordapp.com/attachments/774689939765067828/781709212823584788/Expertland.png
 Inferno Ring + Prince of Darkness: https://cdn.discordapp.com/attachments/774689939765067828/781709596423225354/GhostRider.png
@@ -245,7 +242,6 @@ Wizard Lord Phoenix + Avatar of Wrath: https://cdn.discordapp.com/attachments/77
 Wizard Lord Phoenix + The Bloon Solver: https://cdn.discordapp.com/attachments/774689939765067828/781720384915111967/WLPSolver2.png
 Ezili + Permanent Brew: https://cdn.discordapp.com/attachments/774689939765067828/781720494922530856/EzBrew.png
 Ultra-Juggernaut + Super Mines: https://cdn.discordapp.com/attachments/774689939765067828/781720563232014376/UJugg_Smines.png
-Avatar of Wrath + Homeland Defense: https://cdn.discordapp.com/attachments/774689939765067828/781720643745480704/AvatarLand.png
 Adora + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/781720789660467210/Adora_SGlue.png
 Archmage + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/781720866719006720/Arch_SGlue.png
 Super Maelstrom + Banana Central: https://cdn.discordapp.com/attachments/774689939765067828/781721002614587422/SmaelCentral.png
@@ -271,7 +267,6 @@ Grand Saboteur + Tsar Bomba: https://cdn.discordapp.com/attachments/774689939765
 Master Bomber + Sentry Paragon: https://cdn.discordapp.com/attachments/774689939765067828/781723840744783904/image0.png
 Prince of Darkness + Special Poperations: https://cdn.discordapp.com/attachments/774689939765067828/781724066326642728/image0.png
 Comanche Commander + Prince of Darkness: https://cdn.discordapp.com/attachments/774689939765067828/781724186229080084/image0.png
-Adora + Captain Churchill: https://cdn.discordapp.com/attachments/774689939765067828/781724445358293002/image0.png
 Sentry Paragon + Monkeyopolis: https://cdn.discordapp.com/attachments/774689939765067828/781724556288196638/image0.png
 Sentry Paragon + Trade Empire: https://cdn.discordapp.com/attachments/774689939765067828/781724685041532978/image0.png
 Prince of Darkness + Bloon Master Alchemist: https://cdn.discordapp.com/attachments/774689939765067828/781724843942215700/image0.png
@@ -395,7 +390,7 @@ Sauda + Permanent Brew: https://cdn.discordapp.com/attachments/77468993976506782
 Special Poperations + Total Transformation: https://cdn.discordapp.com/attachments/774689939765067828/903761392086167562/Special_Poperations__Total_Transformation.png
 Sauda + Inferno Ring: https://cdn.discordapp.com/attachments/774689939765067828/903844497488764979/Sauda__Inferno_Ring.png
 Strike Jones + Special Poperations: https://cdn.discordapp.com/attachments/774689939765067828/904039901668974732/Special_Poperations__Striker_Jones.png
-Sauda + Special Poperations: https://cdn.discordapp.com/attachments/774689939765067828/904414804863766528/Sauda__Total_Transformation.png
+Sauda + Total Transformation: https://cdn.discordapp.com/attachments/774689939765067828/904414804863766528/Sauda__Total_Transformation.png
 Superstorm + Bloon Crush: https://cdn.discordapp.com/attachments/774689939765067828/904508910378029056/Superstorm__Bloon_Crush.png
 Bomb Blitz + Monkey Wall Street: https://cdn.discordapp.com/attachments/774689939765067828/904769008748867584/Bomb_Blitz__Monkey_Wall_Street.png
 Pirate Lord + Grandmaster Ninja: https://cdn.discordapp.com/attachments/774689939765067828/904861390743933018/Grandmaster_Ninja__Pirate_Lord.png
@@ -532,7 +527,7 @@ MOAB Domination + Monkey Wall Street: https://cdn.discordapp.com/attachments/959
 Banana Central + M.A.D.: https://cdn.discordapp.com/attachments/959155195617640499/986860768307851264/D0A22534-4B0D-4E90-9C93-E862FBF36D2E.png
 The Tack Zone + Geraldo: https://cdn.discordapp.com/attachments/959155195617640499/986954766682816552/926305CA-EA8C-43FC-813F-A14B8F2BBD89.png
 Monkey-Nomics + The Biggest One: https://cdn.discordapp.com/attachments/959155195617640499/988318231276175431/01816F3C-EB72-4A0E-B549-F08BBFD4331B.png
-Monkey Wall Street + Super Glue: https://cdn.discordapp.com/attachments/959155195617640499/989763646504706168/unknown.png
+Monkey Wall Street + Glue Storm: https://cdn.discordapp.com/attachments/959155195617640499/989763646504706168/unknown.png
 Etienne + Apache Prime: https://cdn.discordapp.com/attachments/959155195617640499/990566853334138910/1AFF7E2A-72A7-4086-8A5E-058A20868B6E.png
 Benjamin + Absolute Zero: https://cdn.discordapp.com/attachments/959155195617640499/991179467814879343/259E8457-0ACF-4473-85D7-FF02F71CC2F3.png
 Obyn Greenfoot + Captain Churchill: https://cdn.discordapp.com/attachments/959155195617640499/992034966789689386/68CB75E8-4F90-4C43-9C09-9C0105898B6D.png
@@ -614,14 +609,12 @@ XXXL Trap + Pirate Lord: https://cdn.discordapp.com/attachments/7746904166495682
 Banana Central + Pirate Lord: https://cdn.discordapp.com/attachments/774690416649568298/793124525848002602/Plord_x_Bcentral.png
 Elite Sniper + Pirate Lord: https://cdn.discordapp.com/attachments/774690416649568298/794738795362779176/Plord__Esniper.png
 Ultra-Juggernaut + Perma Charge: https://cdn.discordapp.com/attachments/774690416649568298/796072957297426543/mail.png
-Perma-Spike + Pirate Lord: https://cdn.discordapp.com/attachments/774690416649568298/796561813428240464/Pspike__Cannon_Ship.png
 Carrier Flagship + Pirate Lord: https://cdn.discordapp.com/attachments/774690416649568298/798367094449897514/Pirate_Lord__Flagship.png
 Archmage + Legend of the Night: https://cdn.discordapp.com/attachments/774690416649568298/799411972461428766/mail.png
 Striker Jones + MOAB Eliminator: https://cdn.discordapp.com/attachments/774690416649568298/801276493454901278/meta.png
 MOAB Domination + Plasma Monkey Fan Club: https://cdn.discordapp.com/attachments/774690416649568298/802190461125001256/MOAB_Dom__PMFC.png
 Crossbow Master + MOAB Domination: https://cdn.discordapp.com/attachments/774690416649568298/803780849740021820/XMB__Mdom_v2.png
 Bloon Crush + Plasma Monkey Fan Club: https://cdn.discordapp.com/attachments/774690416649568298/805568457659514942/Cannon_Fan_Club.png
-Icicle Impale + MOAB Domination: https://cdn.discordapp.com/attachments/774690416649568298/807003887369584670/MOAB_Press__Cryo_Cannon.png
 Bomb Blitz + Perma Charge: https://cdn.discordapp.com/attachments/774690416649568298/809248922026508368/Pcharge_x_BBlitz.png
 Bomb Blitz + Crossbow Master: https://cdn.discordapp.com/attachments/774690416649568298/809549900651429908/Bblitz__XBM.png
 Pre-Emptive Strike + Perma Charge: https://cdn.discordapp.com/attachments/774690416649568298/810895678338760704/Perma-Charge__Pre-Emptive.png
