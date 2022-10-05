@@ -17,11 +17,14 @@ async def on_ready():
 
 @client.slash_command(name="help", description="View info about the bot", guild_ids=testingServersIDs)
 async def help(interaction: Interaction):
-  await interaction.response.send_message("""
+  await interaction.response.send_message(
+    """
     **List of commands:**\n\n 
     `/merge` - shows the merge of two towers (if it exists - so far only merges from the following people have been added: Amber610, Berryl, Canual, JazzyJonah, EngineerMonke, BobertTheBoss, PipDragon (halfway), 423 (no))\n 
     `/addtobot` - adds a merge to the bot (admin only)\n\n 
-    ||Developed by **JazzyJonah#8979** (<@627917067332485120>) - Source: https://github.com/JazzyJonah/ultimate-merge-grabber||")
+    ||Developed by **JazzyJonah#8979** (<@627917067332485120>) - Source: https://github.com/JazzyJonah/ultimate-merge-grabber||
+    """
+    )
   
 
 def magic_filter(query: str):
