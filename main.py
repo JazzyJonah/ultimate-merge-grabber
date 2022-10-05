@@ -89,7 +89,7 @@ class Confirming(nextcord.ui.View):
     self.stop()
 
 @client.slash_command(name="addtobot", description="Add a merge to the bot (admins only)", guild_ids=testingServersIDs)
-@application_checks.check_any(applications_checks.is_owner(), application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548)) #Glaive Dominus, new role, jesus
+@application_checks.check_any(application_checks.is_owner(), application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548)) #Glaive Dominus, new role, jesus
 # @application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548) #Glaive Dominous, new role, jesus
 async def addtobot(
   interaction: Interaction, 
