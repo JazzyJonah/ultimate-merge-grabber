@@ -7,12 +7,13 @@ import nextcord
 intents = nextcord.Intents.all()
 client = commands.Bot(command_prefix = "m!", intents = nextcord.Intents.all())
 
-testingServersIDs = [627917374347149334, 744743425403912193, 1025227800745099334, 1009644604003463188, 598768024761139240]
+testingServersIDs = [627917374347149334, 744743425403912193, 1025227800745099334, 1009644604003463188, 598768024761139240] #JazzyJonah, Tower merging, Smaelgang, Engi testing server, Cyber Quincy
 
 
 @client.event
 async def on_ready():
   print("hello")
+  await sync_all_application_commands()
 
 @client.slash_command(name="help", description="View info about the bot", guild_ids=testingServersIDs)
 async def help(interaction: Interaction):
@@ -81,7 +82,7 @@ class Confirming(nextcord.ui.View):
     self.stop()
 
 @client.slash_command(name="addtobot", description="Add a merge to the bot (admins only)", guild_ids=testingServersIDs)
-@application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548)
+@application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548) #Glaive Dominous, new role, jesus
 async def addtobot(
   interaction: Interaction, 
   tower1: str=SlashOption(
