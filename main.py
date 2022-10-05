@@ -13,7 +13,7 @@ testingServersIDs = [627917374347149334, 744743425403912193, 1025227800745099334
 @client.event
 async def on_ready():
   print("hello")
-  await sync_all_application_commands()
+  await client.sync_all_application_commands()
 
 @client.slash_command(name="help", description="View info about the bot", guild_ids=testingServersIDs)
 async def help(interaction: Interaction):
