@@ -17,7 +17,11 @@ async def on_ready():
 
 @client.slash_command(name="help", description="View info about the bot", guild_ids=testingServersIDs)
 async def help(interaction: Interaction):
-  await interaction.response.send_message("**List of commands:**\n\n `/merge` - shows the merge of two towers (if it exists - so far only merges from the following people have been added: Amber610, Berryl, Canual, JazzyJonah, EngineerMonke, BobertTheBoss, PipDragon (halfway), 423 (no))\n `/addtobot` - adds a merge to the bot (admin only)\n\n ||Developed by **JazzyJonah#8979** (<@627917067332485120>) - Source: https://replit.com/@JazzyJonah/Ultimate-Merge-Grabber||")
+  await interaction.response.send_message("""
+    **List of commands:**\n\n 
+    `/merge` - shows the merge of two towers (if it exists - so far only merges from the following people have been added: Amber610, Berryl, Canual, JazzyJonah, EngineerMonke, BobertTheBoss, PipDragon (halfway), 423 (no))\n 
+    `/addtobot` - adds a merge to the bot (admin only)\n\n 
+    ||Developed by **JazzyJonah#8979** (<@627917067332485120>) - Source: https://github.com/JazzyJonah/ultimate-merge-grabber||")
   
 
 def magic_filter(query: str):
@@ -82,7 +86,8 @@ class Confirming(nextcord.ui.View):
     self.stop()
 
 @client.slash_command(name="addtobot", description="Add a merge to the bot (admins only)", guild_ids=testingServersIDs)
-@application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548) #Glaive Dominous, new role, jesus
+@application_checks.check_any(applications_checks.is_owner(), application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548)) #Glaive Dominus, new role, jesus
+# @application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548) #Glaive Dominous, new role, jesus
 async def addtobot(
   interaction: Interaction, 
   tower1: str=SlashOption(
