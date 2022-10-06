@@ -171,10 +171,12 @@ def check_for_duplicates():
 
 @client.slash_command(name="double_merges", description="Make sure there aren't any duplicate merges!", guild_ids=testingServersIDs)
 async def double_merges(interaction: Interaction):
-  try:
-    await interaction.response.send_message(check_for_duplicates())
-  except:
+  duplicates = check_for_duplicates()
+  if duplicates == None:
     await interaction.response.send_message("There are no duplicates!")
+  else:
+    await interaction.response.send_message(duplicates)
+
 
 
 def find_merge(mergeItem1, mergeItem2, list):
