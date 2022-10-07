@@ -4,6 +4,12 @@ from nextcord.abc import GuildChannel
 from nextcord.ext import commands, application_checks
 import nextcord
 
+from aliases import alias
+from filter import magic_filter
+from duplicates import check_for_duplicates
+from mergeGrabbing import find_merge, do_everything, get_merge_link
+
+
 intents = nextcord.Intents.all()
 client = commands.Bot(command_prefix = "m!", intents = nextcord.Intents.all())
 
@@ -27,18 +33,18 @@ async def help(interaction: Interaction):
     )
   
 
-def magic_filter(query: str):
-    upgrades = ["Ultra-Juggernaut", "Plasma Monkey Fan Club", "Crossbow Master", "Glaive Lord", "Perma Charge", "MOAB Domination", "Bloon Crush", "MOAB Eliminator", "Bomb Blitz", "Inferno Ring", "Super Maelstrom", "The Tack Zone", "Super Brittle", "Absolute Zero", "Icicle Impale", "The Bloon Solver", "Glue Storm", "Super Glue", "Cripple MOAB", "Elite Sniper", "Elite Defender", "Energizer", "Pre-Emptive Strike", "Sub Commander", "Carrier Flagship", "Pirate Lord", "Trade Empire", "Sky Shredder", "Tsar Bomba", "Flying Fortress", "Apache Prime", "Special Poperations", "Comanche Commander", "The Biggest One", "Pop and Awe", "Blooncineration", "Ray of Doom", "M.A.D.", "Bloon Exclusion Zone", "Archmage", "Wizard Lord Phoenix", "Prince of Darkness", "True Sun God", "The Anti-Bloon", "Legend of the Night", "Grandmaster Ninja", "grand Saboteur", "Master Bomber", "Permanent Brew", "Total Transformation", "Bloon Master Alchemist", "Superstorm", "Spirit of the Forest", "Avatar of Wrath", "Banana Central", "Monkey-Nomics", "Monkey Wall Street", "Super Mines", "Carpet of Spikes", "Perma-Spike", "Primary Expertise", "Homeland Defense", "Monkeyopolis", "Sentry Paragon", "UltraBoost", "XXXL Trap", "Quincy", "Gwendolin", "Striker Jones", "Obyn Greenfoot", "Captain Churchill", "Benjamin", "Ezili", "Pat Fusty", "Adora", "Admiral Brickell", "Etienne", "Sauda", "Psi", "Geraldo"]
-    res = filter(lambda x: compare(query.lower(), x.lower()), upgrades)
-    return list(res)[:25]
-def compare(a: str, b: str):
-    last_idx = -1
-    for char in a:
-        idx = b.find(char, last_idx + 1)
-        if idx == -1:
-            return False
-        last_idx = idx
-    return True
+# def magic_filter(query: str):
+#     upgrades = ["Ultra-Juggernaut", "Plasma Monkey Fan Club", "Crossbow Master", "Glaive Lord", "Perma Charge", "MOAB Domination", "Bloon Crush", "MOAB Eliminator", "Bomb Blitz", "Inferno Ring", "Super Maelstrom", "The Tack Zone", "Super Brittle", "Absolute Zero", "Icicle Impale", "The Bloon Solver", "Glue Storm", "Super Glue", "Cripple MOAB", "Elite Sniper", "Elite Defender", "Energizer", "Pre-Emptive Strike", "Sub Commander", "Carrier Flagship", "Pirate Lord", "Trade Empire", "Sky Shredder", "Tsar Bomba", "Flying Fortress", "Apache Prime", "Special Poperations", "Comanche Commander", "The Biggest One", "Pop and Awe", "Blooncineration", "Ray of Doom", "M.A.D.", "Bloon Exclusion Zone", "Archmage", "Wizard Lord Phoenix", "Prince of Darkness", "True Sun God", "The Anti-Bloon", "Legend of the Night", "Grandmaster Ninja", "grand Saboteur", "Master Bomber", "Permanent Brew", "Total Transformation", "Bloon Master Alchemist", "Superstorm", "Spirit of the Forest", "Avatar of Wrath", "Banana Central", "Monkey-Nomics", "Monkey Wall Street", "Super Mines", "Carpet of Spikes", "Perma-Spike", "Primary Expertise", "Homeland Defense", "Monkeyopolis", "Sentry Paragon", "UltraBoost", "XXXL Trap", "Quincy", "Gwendolin", "Striker Jones", "Obyn Greenfoot", "Captain Churchill", "Benjamin", "Ezili", "Pat Fusty", "Adora", "Admiral Brickell", "Etienne", "Sauda", "Psi", "Geraldo"]
+#     res = filter(lambda x: compare(query.lower(), x.lower()), upgrades)
+#     return list(res)[:25]
+# def compare(a: str, b: str):
+#     last_idx = -1
+#     for char in a:
+#         idx = b.find(char, last_idx + 1)
+#         if idx == -1:
+#             return False
+#         last_idx = idx
+#     return True
   
 @client.slash_command(name="merge", description="Pull any merge on the sheet!", guild_ids=testingServersIDs)
 async def merge(
@@ -90,7 +96,6 @@ class Confirming(nextcord.ui.View):
 
 @client.slash_command(name="addtobot", description="Add a merge to the bot (admins only)", guild_ids=testingServersIDs)
 @application_checks.check_any(application_checks.is_owner(), application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548)) #Glaive Dominus, new role, jesus
-# @application_checks.has_any_role(744746672336404580, 845011146552508437, 1025658433803923548) #Glaive Dominous, new role, jesus
 async def addtobot(
   interaction: Interaction, 
   tower1: str=SlashOption(
@@ -141,33 +146,33 @@ async def autocomplete_addtobottower1(interaction: Interaction, tower1: str):
 async def autocomplete_addtobottower2(interaction: Interaction, tower2: str):
   await interaction.response.send_autocomplete(magic_filter(tower2))
 
-def check_for_duplicates():
-  with open("towermerges.txt", "r") as f:
-    merges = f.readlines()
-  duplicates=""
-  for item in merges:
-    item = item.split()
-    vrej = False
-    tower1=""
-    tower2=""
-    for word in item:
-      if vrej:
-        if not word.startswith("https"):
-          tower2+=word+" "
-      elif word!="+":
-        tower1+=word+" "
-      else:
-        vrej = True
-    tower2=tower2.replace(": ","")
+# def check_for_duplicates():
+#   with open("towermerges.txt", "r") as f:
+#     merges = f.readlines()
+#   duplicates=""
+#   for item in merges:
+#     item = item.split()
+#     vrej = False
+#     tower1=""
+#     tower2=""
+#     for word in item:
+#       if vrej:
+#         if not word.startswith("https"):
+#           tower2+=word+" "
+#       elif word!="+":
+#         tower1+=word+" "
+#       else:
+#         vrej = True
+#     tower2=tower2.replace(": ","")
 
-    vrej = 0
-    for x in merges:
-      if tower1 in x and tower2 in x:
-        vrej+=1
-      if vrej>=2:
-        duplicates+=tower1+"+"+" "+tower2+"\n"
-        break
-  return duplicates
+#     vrej = 0
+#     for x in merges:
+#       if tower1 in x and tower2 in x:
+#         vrej+=1
+#       if vrej>=2:
+#         duplicates+=tower1+"+"+" "+tower2+"\n"
+#         break
+#   return duplicates
 
 @client.slash_command(name="double_merges", description="Make sure there aren't any duplicate merges!", guild_ids=testingServersIDs)
 async def double_merges(interaction: Interaction):
@@ -179,28 +184,28 @@ async def double_merges(interaction: Interaction):
 
 
 
-def find_merge(mergeItem1, mergeItem2, list):
-  if(mergeItem1.lower() == mergeItem2.lower()):
-    return("That merge doesn't exist!")
-  i=0
-  for item in list:
-    if(mergeItem1.lower() in item.lower() and mergeItem2.lower() in item.lower()):
-      return(i)
-    i+=1
-  return("That merge doesn't exist!")
+# def find_merge(mergeItem1, mergeItem2, list):
+#   if(mergeItem1.lower() == mergeItem2.lower()):
+#     return("That merge doesn't exist!")
+#   i=0
+#   for item in list:
+#     if(mergeItem1.lower() in item.lower() and mergeItem2.lower() in item.lower()):
+#       return(i)
+#     i+=1
+#   return("That merge doesn't exist!")
 
-def get_merge_link(mergeIndex, list):
-  return(list[mergeIndex].split()[-1])
+# def get_merge_link(mergeIndex, list):
+#   return(list[mergeIndex].split()[-1])
 
 
-def do_everything(mergeItem1, mergeItem2, list):
-  theMergeIndex = find_merge(mergeItem1, mergeItem2, list)
-  if(theMergeIndex == "That merge doesn't exist!"):
-    return(theMergeIndex)
-  try:
-    return(get_merge_link(theMergeIndex, list))
-  except:
-    return("An error occured.")
+# def do_everything(mergeItem1, mergeItem2, list):
+#   theMergeIndex = find_merge(mergeItem1, mergeItem2, list)
+#   if(theMergeIndex == "That merge doesn't exist!"):
+#     return(theMergeIndex)
+#   try:
+#     return(get_merge_link(theMergeIndex, list))
+#   except:
+#     return("An error occured.")
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
