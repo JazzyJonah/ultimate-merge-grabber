@@ -59,11 +59,11 @@ async def merge(
 
 @merge.on_autocomplete("tower1")
 async def autocomplete_mergetower1(interaction: Interaction, tower1: str):
-  await interaction.response.send_autocomplete(magic_filter(alias(tower1)))
+  await interaction.response.send_autocomplete(magic_filter(tower1))
 
 @merge.on_autocomplete("tower2")
 async def autocomplete_mergetower2(interaction: Interaction, tower2: str):
-  await interaction.response.send_autocomplete(magic_filter(alias(tower2)))
+  await interaction.response.send_autocomplete(magic_filter(tower2))
 
 
 class Confirming(nextcord.ui.View):
@@ -133,10 +133,10 @@ async def on_addtobot_error(interaction: Interaction, error):
 
 @addtobot.on_autocomplete("tower1")
 async def autocomplete_addtobottower1(interaction: Interaction, tower1: str):
-  await interaction.response.send_autocomplete(magic_filter(alias(tower1)))
+  await interaction.response.send_autocomplete(magic_filter(tower1))
 @addtobot.on_autocomplete("tower2")
 async def autocomplete_addtobottower2(interaction: Interaction, tower2: str):
-  await interaction.response.send_autocomplete(magic_filter(alias(tower2)))
+  await interaction.response.send_autocomplete(magic_filter(tower2))
 
 
 @client.slash_command(name="double_merges", description="Make sure there aren't any duplicate merges!", guild_ids=testingServersIDs)
