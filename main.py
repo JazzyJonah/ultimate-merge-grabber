@@ -27,24 +27,12 @@ async def help(interaction: Interaction):
     """
     **List of commands:**\n
     `/merge` - shows the merge of two towers (if it exists - so far only merges from the following people have been added: Amber610, Berryl, Canual, JazzyJonah, EngineerMonke, BobertTheBoss, PipDragon (halfway), 423 (no)) 
-    `/addtobot` - adds a merge to the bot (admin only)\n
+    `/addtobot` - adds a merge to the bot (admin only)
+    `/double_merges` - makes sure there aren't any duplicate merges on the bot\n
     ||Developed by **JazzyJonah#8979** (<@627917067332485120>) - Source: https://github.com/JazzyJonah/ultimate-merge-grabber||
     """
     )
   
-
-# def magic_filter(query: str):
-#     upgrades = ["Ultra-Juggernaut", "Plasma Monkey Fan Club", "Crossbow Master", "Glaive Lord", "Perma Charge", "MOAB Domination", "Bloon Crush", "MOAB Eliminator", "Bomb Blitz", "Inferno Ring", "Super Maelstrom", "The Tack Zone", "Super Brittle", "Absolute Zero", "Icicle Impale", "The Bloon Solver", "Glue Storm", "Super Glue", "Cripple MOAB", "Elite Sniper", "Elite Defender", "Energizer", "Pre-Emptive Strike", "Sub Commander", "Carrier Flagship", "Pirate Lord", "Trade Empire", "Sky Shredder", "Tsar Bomba", "Flying Fortress", "Apache Prime", "Special Poperations", "Comanche Commander", "The Biggest One", "Pop and Awe", "Blooncineration", "Ray of Doom", "M.A.D.", "Bloon Exclusion Zone", "Archmage", "Wizard Lord Phoenix", "Prince of Darkness", "True Sun God", "The Anti-Bloon", "Legend of the Night", "Grandmaster Ninja", "grand Saboteur", "Master Bomber", "Permanent Brew", "Total Transformation", "Bloon Master Alchemist", "Superstorm", "Spirit of the Forest", "Avatar of Wrath", "Banana Central", "Monkey-Nomics", "Monkey Wall Street", "Super Mines", "Carpet of Spikes", "Perma-Spike", "Primary Expertise", "Homeland Defense", "Monkeyopolis", "Sentry Paragon", "UltraBoost", "XXXL Trap", "Quincy", "Gwendolin", "Striker Jones", "Obyn Greenfoot", "Captain Churchill", "Benjamin", "Ezili", "Pat Fusty", "Adora", "Admiral Brickell", "Etienne", "Sauda", "Psi", "Geraldo"]
-#     res = filter(lambda x: compare(query.lower(), x.lower()), upgrades)
-#     return list(res)[:25]
-# def compare(a: str, b: str):
-#     last_idx = -1
-#     for char in a:
-#         idx = b.find(char, last_idx + 1)
-#         if idx == -1:
-#             return False
-#         last_idx = idx
-#     return True
   
 @client.slash_command(name="merge", description="Pull any merge on the sheet!", guild_ids=testingServersIDs)
 async def merge(
@@ -62,7 +50,7 @@ async def merge(
 ):
   with open("towermerges.txt") as f:
     merges = f.readlines()
-  response = str(do_everything(tower1, tower2, merges))
+  response = str(do_everything(alias(tower1), alias(tower2), merges))
   if response == "That merge doesn't exist!":
     isError = True
   else:
@@ -71,11 +59,12 @@ async def merge(
 
 @merge.on_autocomplete("tower1")
 async def autocomplete_mergetower1(interaction: Interaction, tower1: str):
-  await interaction.response.send_autocomplete(magic_filter(tower1))
+  await interaction.response.send_autocomplete(magic_filter(alias(tower1)))
 
 @merge.on_autocomplete("tower2")
 async def autocomplete_mergetower2(interaction: Interaction, tower2: str):
-  await interaction.response.send_autocomplete(magic_filter(tower2))
+  await interaction.response.send_autocomplete(magic_filter(alias(tower2)))
+
 
 class Confirming(nextcord.ui.View):
   def __init__(self):
@@ -114,6 +103,9 @@ async def addtobot(
     required=True
   )
 ):
+
+  tower1 = alias(tower1)
+  tower2 = alias(tower2)
   with open("towermerges.txt") as f:
     merges = f.readlines()
   if isinstance(find_merge(tower1, tower2, merges),int):
@@ -141,38 +133,11 @@ async def on_addtobot_error(interaction: Interaction, error):
 
 @addtobot.on_autocomplete("tower1")
 async def autocomplete_addtobottower1(interaction: Interaction, tower1: str):
-  await interaction.response.send_autocomplete(magic_filter(tower1))
+  await interaction.response.send_autocomplete(magic_filter(alias(tower1)))
 @addtobot.on_autocomplete("tower2")
 async def autocomplete_addtobottower2(interaction: Interaction, tower2: str):
-  await interaction.response.send_autocomplete(magic_filter(tower2))
+  await interaction.response.send_autocomplete(magic_filter(alias(tower2)))
 
-# def check_for_duplicates():
-#   with open("towermerges.txt", "r") as f:
-#     merges = f.readlines()
-#   duplicates=""
-#   for item in merges:
-#     item = item.split()
-#     vrej = False
-#     tower1=""
-#     tower2=""
-#     for word in item:
-#       if vrej:
-#         if not word.startswith("https"):
-#           tower2+=word+" "
-#       elif word!="+":
-#         tower1+=word+" "
-#       else:
-#         vrej = True
-#     tower2=tower2.replace(": ","")
-
-#     vrej = 0
-#     for x in merges:
-#       if tower1 in x and tower2 in x:
-#         vrej+=1
-#       if vrej>=2:
-#         duplicates+=tower1+"+"+" "+tower2+"\n"
-#         break
-#   return duplicates
 
 @client.slash_command(name="double_merges", description="Make sure there aren't any duplicate merges!", guild_ids=testingServersIDs)
 async def double_merges(interaction: Interaction):
@@ -181,31 +146,6 @@ async def double_merges(interaction: Interaction):
     await interaction.response.send_message("There are no duplicates!")
   else:
     await interaction.response.send_message(duplicates)
-
-
-
-# def find_merge(mergeItem1, mergeItem2, list):
-#   if(mergeItem1.lower() == mergeItem2.lower()):
-#     return("That merge doesn't exist!")
-#   i=0
-#   for item in list:
-#     if(mergeItem1.lower() in item.lower() and mergeItem2.lower() in item.lower()):
-#       return(i)
-#     i+=1
-#   return("That merge doesn't exist!")
-
-# def get_merge_link(mergeIndex, list):
-#   return(list[mergeIndex].split()[-1])
-
-
-# def do_everything(mergeItem1, mergeItem2, list):
-#   theMergeIndex = find_merge(mergeItem1, mergeItem2, list)
-#   if(theMergeIndex == "That merge doesn't exist!"):
-#     return(theMergeIndex)
-#   try:
-#     return(get_merge_link(theMergeIndex, list))
-#   except:
-#     return("An error occured.")
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
