@@ -71,7 +71,7 @@ class Confirming(nextcord.ui.View):
     super().__init__()
     self.value=None
     
-  @nextcord.ui.button(label="Confrim", style=nextcord.ButtonStyle.green)
+  @nextcord.ui.button(label="Confirm", style=nextcord.ButtonStyle.green)
   async def confirm(self, button: nextcord.ui.Button, interaction: Interaction):
     await interaction.response.send_message("Confirmed", ephemeral=False)
     self.value=True
