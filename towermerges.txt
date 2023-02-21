@@ -96,7 +96,7 @@ Inferno Ring + XXXL Trap: https://media.discordapp.net/attachments/9591551956176
 Bloon Master Alchemist + Sub Commander: https://cdn.discordapp.com/attachments/959155195617640499/959258347889115166/FAE4AA1D-13A1-4D6D-B5E2-FED55593892D.png
 MOAB Eliminator + Pop and Awe: https://cdn.discordapp.com/attachments/959155195617640499/959286337163390986/Untitled151_20220401104245.png
 Trade Empire + Carrier Flagship: https://media.discordapp.net/attachments/959155195617640499/1020607028651106355/199D9C5E-7A84-4423-A5D1-6E7A9F9C54E1.png
-The Biggest One + Psi: https://cdn.discordapp.com/attachments/1025661608774610995/1025667280618668042/Untitled152_20221001151524.png
+Psi + The Biggest One: https://cdn.discordapp.com/attachments/774690477420183582/1067475589201657876/sketch-1674572170126.png
 Captain Churchill + Glue Storm: https://cdn.discordapp.com/attachments/959155195617640499/959371357345431632/Untitled153_20220401154832.png
 Super Glue + sky shredder: https://cdn.discordapp.com/attachments/959155195617640499/959392408557223996/Untitled155_20220401180018.png
 Super Glue + Sky Shredder: https://cdn.discordapp.com/attachments/959155195617640499/959392408557223996/Untitled155_20220401180018.png
@@ -246,7 +246,7 @@ Adora + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/78
 Archmage + Super Glue: https://cdn.discordapp.com/attachments/774689939765067828/781720866719006720/Arch_SGlue.png
 Super Maelstrom + Banana Central: https://cdn.discordapp.com/attachments/774689939765067828/781721002614587422/SmaelCentral.png
 Superstorm + Super Maelstrom: https://cdn.discordapp.com/attachments/774689939765067828/907413366912458842/Superstorm__Super_Maelstrom.png
-Sauda + Super Maelstrom: https://cdn.discordapp.com/attachments/774689939765067828/907702070067466301/Sauda__Super_Maelstrom.png
+Sauda + Super Maelstrom: https://cdn.discordapp.com/attachments/928842808872271932/1026308300280713228/IMG_0876.png
 Adora + Super Maelstrom: https://cdn.discordapp.com/attachments/774689939765067828/966108195842048070/Adora__Super_Maelstrom.png
 Permanent Brew + Ultra-Juggernaut: https://cdn.discordapp.com/attachments/774689939765067828/781721274119749662/UjuggPBrew.png
 Ultra-Juggernaut + Banana Central: https://cdn.discordapp.com/attachments/774689939765067828/781721501761536040/CentJugg1.1.png
@@ -644,5 +644,39 @@ Cripple MOAB + MOAB Domination: https://cdn.discordapp.com/attachments/774690416
 Etienne + MOAB Domination: https://cdn.discordapp.com/attachments/774690416649568298/1022947962374074448/8055CE2A-99F0-452D-A36E-08121A816273.png
 Monkey Wall Street + Super Glue: https://cdn.discordapp.com/attachments/959155195617640499/965897334837882990/Untitled208_20220419164958.png
 Ezili + Icicle Impale: https://cdn.discordapp.com/attachments/959155195617640499/1025813017075646494/43DFC32A-CF14-408D-9B23-3432EF7AF512.png
-Ezili + Etienne: https://cdn.discordapp.com/attachments/777305090050228245/1026254660127948820/unknown.png
+Etienne + Ezili: https://cdn.discordapp.com/attachments/774690477420183582/1026302693028941825/sketch-1664748179693.png
 Adora + Absolute Zero: https://cdn.discordapp.com/attachments/771473084250062848/1026967265893163129/unknown.png
+Prince of Darkness + Plasma Monkey Fan Club: https://media.discordapp.net/attachments/779790911768100875/1027055601307631717/NecroFanClub.png?width=839&height=671
+Adora + Glaive Lord: https://media.discordapp.net/attachments/774690079306153985/774730876394274866/AdoraLordmergetakethree.png?width=689&height=671
+Energizer + Perma Charge: 423DoesntWantHisMergesOnThisBot
+Glaive Lord + Gwendolin: https://media.discordapp.net/attachments/774690477420183582/1036359235451240618/sketch-1667157512714.png
+Superstorm + The Biggest One: https://media.discordapp.net/attachments/774689939765067828/1062057014508916867/Superstorm__The_Biggest_One.png?width=623&height=670
+Blooncineration + Energizer: https://cdn.discordapp.com/attachments/774689939765067828/1062804710744141874/Blooncineration__Energizer.png
+Wizard Lord Phoenix + Absolute Zero: https://cdn.discordapp.com/attachments/970673823567470642/970674356256657428/WLP_X_AZ.png
+True Sun God + Bloon Master Alchemist: https://cdn.discordapp.com/attachments/970673823567470642/970674678450507816/unknown.png
+Spirit of the Forest + Absolute Zero: https://cdn.discordapp.com/attachments/970673823567470642/970674743244115988/unknown.png
+M.A.D. + Blooncineration: https://cdn.discordapp.com/attachments/970673823567470642/970674796977324104/unknown.png
+Flying Fortress + Apache Prime: https://cdn.discordapp.com/attachments/970673823567470642/970674962031579216/unknown.png
+Superstorm + Energizer: https://cdn.discordapp.com/attachments/970673823567470642/970675059398172712/unknown.png
+Super Brittle + Bomb Blitz: https://cdn.discordapp.com/attachments/970673823567470642/970675130613243944/unknown.png
+Archmage + Geraldo: https://cdn.discordapp.com/attachments/970673823567470642/970675193930465280/unknown.png
+UltraBoost + Avatar of Wrath: https://cdn.discordapp.com/attachments/970673823567470642/970675275971043328/unknown.png
+Prince of Darkness + Adora: https://cdn.discordapp.com/attachments/970673823567470642/970675372129665094/PoD_X_Adora.png
+Cripple MOAB + Ray of Doom: https://cdn.discordapp.com/attachments/970673823567470642/971485357931651072/Cripple_X_RoD.png
+Primary Expertise + Pop and Awe: https://cdn.discordapp.com/attachments/970673823567470642/987011679722283048/unknown.png
+Wizard Lord Phoenix + The Anti-Bloon: https://cdn.discordapp.com/attachments/970673823567470642/999072764726100048/unknown.png
+Wizard Lord Phoenix + True Sun God: https://cdn.discordapp.com/attachments/970673823567470642/1002574925359484978/unknown.png
+Sauda + UltraBoost: https://cdn.discordapp.com/attachments/774689939765067828/1026869791128043570/Sauda__Ultraboost.png
+Plasma Monkey Fan Club + Striker Jones: https://media.discordapp.net/attachments/774689939765067828/1063116576871698442/Striker_Jones__Plasma_Monkey_Fan_Club.png
+Captain Churchill + Absolute Zero: https://cdn.discordapp.com/attachments/774689939765067828/1063211618902757478/Absolute_Zero__Churchill.png
+Super Mines + MOAB Domination: https://media.discordapp.net/attachments/928842808872271932/1041544768305508432/IMG_0968.png
+Plasma Monkey Fan Club + Adora: https://cdn.discordapp.com/attachments/928842808872271932/1063426689893400596/IMG_1040.png
+Super Maelstrom + Bloon Master Alchemist: https://cdn.discordapp.com/attachments/959155195617640499/1026134234542395452/unknown.png
+Grandmaster Ninja + Obyn Greenfoot: https://media.discordapp.net/attachments/774689939765067828/1064581015508615299/Grandmaster_Ninja__Obyn.png?width=669&height=671
+M.A.D. + Super Maelstrom: https://cdn.discordapp.com/attachments/774690477420183582/1067475341821612032/sketch-1665077792460.png
+Super Brittle + Obyn Greenfoot: 423DoesntWantHisMergesOnThisBot
+Spirit of the Forest + Elite Sniper: https://media.discordapp.net/attachments/1012492807224700938/1012494738370334812/SoftSniper.png?width=775&height=671
+Spirit of the Forest + Perma-Spike: https://media.discordapp.net/attachments/1012492807224700938/1012495040267943966/SotfSpike.png?width=671&height=671
+Spirit of the Forest + Grand Saboteur: https://cdn.discordapp.com/attachments/1012492807224700938/1012495284762329098/GrandSotf.png
+Spirit of the Forest + Bloon Exclusion Zone: https://cdn.discordapp.com/attachments/1012492807224700938/1012495627097231470/SotfZone.png
+Apache Prime + MOAB Domination: https://cdn.discordapp.com/attachments/1012492807224700938/1014186167954059296/DOMMEUWU.png
